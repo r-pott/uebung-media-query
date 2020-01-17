@@ -30,7 +30,7 @@ html, body{
 
 
 .card h1{
-	background: #fff;
+	background: pink;
 	padding: 5px;
 	
 }
@@ -39,3 +39,45 @@ html, body{
 	display: block;
 }
 
+
+@media (min-width: 980px) {
+	
+	.row{
+		display: flex;
+	}	
+
+	.card h1 {
+		text-transform: uppercase;
+		text-align: center;
+		background-color: white;
+	}
+
+	#blau{
+		display: none;
+	}
+}
+
+/* endet der media query */
+
+@media ( min-width: 1600px) {
+	.wrapper {
+		width: 70%;
+	}
+	#rot{
+		display: none;
+	}
+	#blau{
+		display: block;
+	}
+}
+
+#rot{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+#blau{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	}
